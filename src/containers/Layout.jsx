@@ -16,8 +16,8 @@ const Layout = ({ children }) => {
 	return (
 		<div className="layout center" style={{ position: 'relative' }}>
 			<OptionsBtn openNavbar={openNavbar}/>
-			<Navbar openNavbar={openNavbar} isOpenNavbar={isOpenNavbar}/>
 			<MenuBtn/>
+			<Navbar openNavbar={openNavbar} isOpenNavbar={isOpenNavbar}/>
 			<Contact/>
 			<Header />
 			{
