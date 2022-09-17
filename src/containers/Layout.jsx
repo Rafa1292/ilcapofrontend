@@ -3,15 +3,21 @@ import Header from '@components/Header';
 import MenuBtn from '@components/MenuButton';
 import OptionsBtn from '@components/OptionsButton';
 import Contact from '@components/Contact';
+import Navbar from '@components/Navbar';
 import Loader from '@components/Loader';
 
 const Layout = ({ children }) => {
 	const [loader, setLoader] = useState(true);
+	const [isOpenNavbar, setOpenNavbar] = useState(false);
 
+	const openNavbar = ()=> {
+		setOpenNavbar(!isOpenNavbar)
+	}
 	return (
 		<div className="layout center" style={{ position: 'relative' }}>
+			<OptionsBtn openNavbar={openNavbar}/>
+			<Navbar openNavbar={openNavbar} isOpenNavbar={isOpenNavbar}/>
 			<MenuBtn/>
-			<OptionsBtn/>
 			<Contact/>
 			<Header />
 			{

@@ -1,0 +1,29 @@
+.navbar{
+    position: absolute;
+    width: 100vw;
+    min-height: calc(100vh - 95px);
+    top: 35px;
+    left: -100vw;
+    transition: all ease 50ms;
+}
+.navbar-content{
+    width: 50vw;
+    min-height: calc(100vh - 95px);
+    background-color: black;
+}
+
+.openNavbar{
+    left: -1px;
+}
+
+.close-icon{
+    position: absolute;
+    top: 5px;
+    right: calc(50vw + 5px);
+}
+
+.navbar-backdrop{
+    background-color: rgba(0,0,0,.2);
+    width: 50vw;
+    min-height: calc(100vh - 95px);
+}
