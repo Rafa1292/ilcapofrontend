@@ -8,7 +8,8 @@ const Contact = () => {
     return (
         <div className='col-10 d-flex center' style={{
             placeItems: 'center',
-            background: '#940b04', height: '35px'
+            background: '#940b04', height: '35px',
+            position: 'fixed', top: '0'
         }}>
             <img style={{ opacity: '0.8' }} className='mx-1' src={wapp} height={25} />
 

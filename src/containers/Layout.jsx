@@ -7,7 +7,7 @@ import Navbar from '@components/Navbar';
 import Loader from '@components/Loader';
 
 const Layout = ({ children }) => {
-	const [loader, setLoader] = useState(true);
+	const [loader, setLoader] = useState(false);
 	const [isOpenNavbar, setOpenNavbar] = useState(false);
 
 	const openNavbar = ()=> {
