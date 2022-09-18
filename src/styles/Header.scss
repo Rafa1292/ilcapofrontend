@@ -39,3 +39,11 @@
 		right: 155px;
 	}
 }
+
+@media (min-width: 1000px) {
+	.header-container {
+		width: 800px;
+		border-top-right-radius: 84px;
+		border-top-left-radius: 85px;
+	}
+}

@@ -518,3 +518,9 @@ input[type="checkbox"i] {
 		width: 100%;
 	}
 }
+
+/* @media (min-width: 700px) {
+    body{
+		width: 768px;
+	}
+} */
