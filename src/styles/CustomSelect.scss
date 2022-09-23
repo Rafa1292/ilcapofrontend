@@ -1,0 +1,89 @@
+.custom-select{
+    width: 240px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 2px;
+    position: relative;
+    height: 42px;
+    color: rgba(0,0,0,.6);
+    cursor: pointer;
+
+}
+
+.custom-select_value{
+    width: 85%;
+    place-items: center;
+    display: flex;
+    place-content: center;
+}
+
+.custom-select_option{
+    box-sizing: border-box;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    padding: 2px;
+}
+
+.custom-select_option:hover{
+    background-color: rgba(0,0,0,.2);
+    color: white;
+}
+
+.custom-select_arrow{
+    width: 15%;
+
+    img{
+        opacity: 0.2;
+        transition: all ease 500ms;
+    }
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.options-content{
+    box-sizing: border-box;
+    overflow-y: scroll;
+    z-index: 1;
+    width: 240px;
+    position: absolute;
+    max-height: 0;
+    transition: all ease 500ms;
+    top: 40px;
+    background: white;
+    border: 1px solid rgba(0,0,0,.2);
+    left: -1px;
+    box-shadow: inset 0px 0px 8px -2px rgb(0 0 0 / 20%);
+}
+
+.options-content-open{
+    height: fit-content;
+    max-height: 100px;
+}
+
+.options-content::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+    .options-content::-webkit-scrollbar:vertical {
+        width: 2px;
+    }
+
+.options-content::-webkit-scrollbar-button:increment, .contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+.options-content::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.options-content::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: none;
+}
+
+.options-content::-webkit-scrollbar-track {
+    border-radius: 10px;
+}

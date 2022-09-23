@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import '@styles/Header.scss';
 import cart from '@icons/box.png';
 import openCart from '@icons/openbox.png';
@@ -11,9 +11,16 @@ const Header = () => {
 
 	return (
 		<div className='header-container'>
-			<img src={user} className='header-user'/>
-			<img src={logoblack} className='header-logo'/>
-			<img onClick={()=> setCartIsOpen(!cartIsOpen)} src={cartIsOpen? openCart : cart} className='header-cart'/>
+			<div className="header-user_container center py-1">
+				<img src={user} className='header-user' />
+			</div>
+			<div className="header-logo_container center">
+				<img src={logoblack} className='header-logo' />
+			</div>
+			<div className="header-cart_container center py-1">
+				<img onClick={() => setCartIsOpen(!cartIsOpen)} src={cartIsOpen ? openCart : cart} className='header-cart' />
+			</div>
+
 		</div>
 	);
 }

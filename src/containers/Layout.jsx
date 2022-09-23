@@ -5,6 +5,7 @@ import OptionsBtn from '@components/OptionsButton';
 import Contact from '@components/Contact';
 import Navbar from '@components/Navbar';
 import Loader from '@components/Loader';
+import CustomInput from '@components/CustomInput';
 
 const Layout = ({ children }) => {
 	const [loader, setLoader] = useState(false);
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
 			<MenuBtn/>
 			<Navbar openNavbar={openNavbar} isOpenNavbar={isOpenNavbar}/>
 			<Contact/>
+
 			<Header />
 			{
 				!loader &&

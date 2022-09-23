@@ -6,29 +6,66 @@
 	height: 60px;
 	width: 100vw;
 	// background-color: #940b04;
-	background-color: black;
+	background-color:black ;
 	display: flex;
-	place-content: center;
-	place-items: center;
+	z-index: 100;
+	justify-content: space-around;
 }
 
 .header-logo {
-	height: 135px;
+	height: 110px;
 	position: absolute;
-	bottom: -5px;
+    bottom: 2px;
 }
 
 .header-user {
 	height: 40px;
-	position: absolute;
-	left: 25px;
 }
 
 .header-cart {
 	height: 40px;
-	position: absolute;
-	right: 25px;
 }
+.header-logo_container {
+	width: 150px;
+}
+
+.header-user_container {
+	width: 85px;
+	height: 60px;
+	background-color: black;
+	position: relative;
+	border-top-left-radius: 20px
+}
+
+.header-cart_container {
+	width: 85px;
+	height: 60px;
+	background-color: black;
+	position: relative;
+	border-top-right-radius: 20px
+}
+
+.header-user_container::before {
+	content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -25px;
+    height: 50px;
+    width: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: -9px 9px 0 0 black;
+  }
+
+.header-cart_container::before {
+	content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -25px;
+    height: 50px;
+    width: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 9px 9px 0 0 black;
+  }
 
 @media (min-width: 700px) {
 	.header-user {
@@ -42,7 +79,7 @@
 
 @media (min-width: 1000px) {
 	.header-container {
-		width: 800px;
+		width: 560px;
 		border-top-right-radius: 84px;
 		border-top-left-radius: 85px;
 	}

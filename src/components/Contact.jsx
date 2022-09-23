@@ -9,7 +9,7 @@ const Contact = () => {
         <div className='col-10 d-flex center' style={{
             placeItems: 'center',
             background: '#940b04', height: '35px',
-            position: 'fixed', top: '0'
+            position: 'fixed', top: '0', zIndex: '100'
         }}>
             <img style={{ opacity: '0.8' }} className='mx-1' src={wapp} height={25} />
 
