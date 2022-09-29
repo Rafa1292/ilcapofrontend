@@ -1,11 +1,10 @@
-import React, { useEffect, useContext, useState, useRef } from 'react';
+import React, { useState } from 'react';
 import Header from '@components/Header';
 import MenuBtn from '@components/MenuButton';
 import OptionsBtn from '@components/OptionsButton';
 import Contact from '@components/Contact';
 import Navbar from '@components/Navbar';
 import Loader from '@components/Loader';
-import CustomInput from '@components/CustomInput';
 
 const Layout = ({ children }) => {
 	const [loader, setLoader] = useState(false);
@@ -21,7 +20,7 @@ const Layout = ({ children }) => {
 			<Navbar openNavbar={openNavbar} isOpenNavbar={isOpenNavbar}/>
 			<Contact/>
 
-			<Header />
+			<Header/>
 			{
 				!loader &&
 				<>

@@ -1,7 +1,7 @@
 .menu-btn{
     position: fixed;
     top: 35px;
-    right: 2vh;
+    right: calc((100vw - 730px) / 2);;
     z-index: 100;
 }
 

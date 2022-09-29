@@ -10,6 +10,7 @@ import SendEmail from '@pages/SendEmail';
 import PrivacyPolicy from '@pages/PrivacyPolicy';
 import DeleteMyData from '@pages/DeleteMyData';
 import NotFound from '@pages/NotFound';
+import MyCart from '@pages/MyCart.jsx';
 import AppContext from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
 import '@styles/global.css';
@@ -21,6 +22,7 @@ const App = () => {
 			<BrowserRouter>
 				<Layout>
 					<Switch>
+						<Route exact path="/cart" component={MyCart} />
 						<Route exact path="/login" component={Login} />
 						<Route exact path="/privacy-policy" component={PrivacyPolicy} />
 						<Route exact path="/delete-my-data" component={DeleteMyData} />

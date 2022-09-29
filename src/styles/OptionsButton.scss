@@ -1,7 +1,7 @@
 .options-btn{
     position: fixed;
     top: 50px;
-    left: 2vh;
+    left: calc((100vw - 730px) / 2);;
     backdrop-filter: blur(2px);
     width: 60px;
     height: 60px;

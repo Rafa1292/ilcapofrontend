@@ -1,9 +1,15 @@
+html{
+	display: flex;
+	justify-content: center;
+}
 body {
 	max-height: 100vh;
 	overflow: scroll;
 	overflow-x: hidden;
 	margin: 0;
 	font-family: 'Quicksand', sans-serif;
+	max-width: 770px;
+	padding-top: 130px;
 }
 
 .layout::-webkit-scrollbar {
@@ -11,7 +17,7 @@ body {
 }
 
     .layout::-webkit-scrollbar:vertical {
-        width: 1px;
+        width: 4px;
     }
 
 .layout::-webkit-scrollbar-button:increment, .contenedor::-webkit-scrollbar-button {
@@ -519,6 +525,7 @@ input[type="checkbox"i] {
 		width: 100%;
 	}
 }
+
 
 /* @media (min-width: 700px) {
     body{

@@ -7,8 +7,10 @@ const ProductItem = () => {
     const [option, setOption] = useState(null);
 
     return (
-        <div className="d-flex product-container col-md-5 flex-wrap center">
-            <img className='product-image' src='https://cdn.papajohns.cr/thumbnails/pizzas/bannermargaritacaprese_1610567568_medium_1652317797_small.png' />
+        <div className="d-flex product-container col-sm-5 flex-wrap center">
+            <div className="col-10 flex-wrap center">
+                <img className='product-image' src='https://cdn.papajohns.cr/thumbnails/pizzas/bannermargaritacaprese_1610567568_medium_1652317797_small.png' />
+            </div>
             <div className="options-container flex-wrap">
                 <CustomSelect value={option} defaultLabel='Seleccione un tamaño'>
                     <div onClick={() => setOption('Grande')}
@@ -30,14 +32,16 @@ const ProductItem = () => {
                 </CustomSelect>
                 <span>¢,9800</span>
             </div>
-            <span className="description d-flex col-7">
-                Pasta delgada, salsa de tomate,
-                jamon, hongos, chile dulce, cebolla,
-                peperoni, carne, queso mozzarella.
-            </span>
-            <span className='col-3 d-flex center content-center'>
-                <img className='cart' src={cart} />
-            </span>
+            <div className="col-sm-8 flex-wrap">
+                <span className="description d-flex col-7">
+                    Pasta delgada, salsa de tomate,
+                    jamon, hongos, chile dulce, cebolla,
+                    peperoni, carne, queso mozzarella.
+                </span>
+                <span className='col-3 d-flex center content-center'>
+                    <img className='cart' src={cart} />
+                </span>
+            </div>
         </div>
     );
 }
